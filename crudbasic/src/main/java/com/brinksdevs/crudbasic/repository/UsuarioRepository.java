@@ -1,0 +1,9 @@
+package com.brinksdevs.crudbasic.repository;
+
+import com.brinksdevs.crudbasic.model.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+}
