@@ -2,7 +2,7 @@ package com.brinksdevs.crudbasic.controller;
 
 import com.brinksdevs.crudbasic.dto.UsuarioDto;
 import com.brinksdevs.crudbasic.model.Usuario;
-import com.brinksdevs.crudbasic.service.UserService;
+import com.brinksdevs.crudbasic.service.UsuarioService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 public class UsuarioController {
 
-    private final UserService service;
+    private final UsuarioService service;
 
     @GetMapping
     public ResponseEntity<List<UsuarioDto>>  findAllUsers(){

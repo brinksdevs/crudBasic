@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class UserService {
+public class UsuarioService {
     private final UsuarioRepository repository;
     public List<UsuarioDto> findAllUsers(){
         List<Usuario> usuarios = repository.findAll();
