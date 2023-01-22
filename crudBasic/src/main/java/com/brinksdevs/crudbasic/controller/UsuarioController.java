@@ -2,6 +2,8 @@ package com.brinksdevs.crudbasic.controller;
 
 import com.brinksdevs.crudbasic.dto.UsuarioDto;
 import com.brinksdevs.crudbasic.exception.ResourceNotFoundException;
+import com.brinksdevs.crudbasic.model.Usuario;
+import com.brinksdevs.crudbasic.repository.UsuarioRepository;
 import com.brinksdevs.crudbasic.service.UsuarioService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -19,6 +21,7 @@ import java.util.Optional;
 public class UsuarioController {
 
     private final UsuarioService service;
+    private final UsuarioRepository usuarioRepository;
 
     @GetMapping
     public ResponseEntity<List<UsuarioDto>>  findAllUsuarios(){
@@ -26,8 +29,8 @@ public class UsuarioController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<UsuarioDto> findUsuarioById(@PathVariable(name = "id") Long id){
-        Optional<UsuarioDto> usuario = service.findUsuarioById(id);
+    public ResponseEntity<Usuario> findUsuarioById(@PathVariable(name = "id") Long id){
+        Optional<Usuario> usuario = service.findUsuarioById(id);
         return ResponseEntity.ok().body(usuario.orElseThrow(() -> new ResourceNotFoundException(id)));
     }
     @PostMapping
