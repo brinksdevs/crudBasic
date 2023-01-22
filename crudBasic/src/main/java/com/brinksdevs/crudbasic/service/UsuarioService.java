@@ -27,11 +27,32 @@ public class UsuarioService {
         Usuario usuarioSalvo = repository.save(this.passUsuarioDtoToUsuario(usuarioToSave));
         return this.passUsuarioToDto(usuarioSalvo);
     }
-
     public Optional<Usuario> findUsuarioById(Long id){
-        return repository.findById(id);
+        if (verificaIfUsuarioExistById(id))
+            return repository.findById(id);
+        return Optional.empty();
     }
-    
+    public void deleteByUsuarioId(Long id){
+        try {
+            repository.deleteById(id);
+        }catch (RuntimeException e){
+            throw new ResourceNotFoundException(id);
+        }
+    }
+    public UsuarioDto editUsuarioPorId(Long id, UsuarioDto usuarioDto){
+        if (verificaIfUsuarioExistById(id)){
+            Usuario usuario = this.passUsuarioDtoToUsuario(usuarioDto);
+            usuario.setId(id);
+            usuarioDto.setId(id);
+            repository.save(usuario);
+            return usuarioDto;
+        }
+        throw  new ResourceNotFoundException(id);
+    }
+    private Boolean verificaIfUsuarioExistById(Long id){
+        Optional<Usuario> usuario = repository.findById(id);
+        return usuario.isPresent();
+    }
     public UsuarioDto passUsuarioToDto(Usuario usuario) {
         UsuarioDto userDto = new UsuarioDto();
         userDto.setId(usuario.getId());

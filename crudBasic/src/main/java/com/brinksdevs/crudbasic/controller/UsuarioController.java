@@ -39,5 +39,15 @@ public class UsuarioController {
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(userSalvo.getId()).toUri();
         return ResponseEntity.created(uri).body(userSalvo);
     }
+    @PutMapping("/{id}")
+    public ResponseEntity<UsuarioDto> editarUsuarioPorId(@PathVariable(name = "id") Long id, @RequestBody UsuarioDto usuarioDtoDadosParaEditar){
+        return ResponseEntity.ok().body(service.editUsuarioPorId(id,usuarioDtoDadosParaEditar));
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteUsuarioById(@PathVariable(name = "id") long id){
+        service.deleteByUsuarioId(id);
+        return ResponseEntity.noContent().build();
+    }
 
 }
