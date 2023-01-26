@@ -1,4 +1,4 @@
-package com.basic_crud_plugins.rest_configurations;
+package com.brinks.basic_crud_plugins.rest_configurations;
 
 import com.brinks.use_cases.apagar_usuario_por_id.implementations.exceptions.UsuarioNaoEncontradoException;
 import com.brinks.use_cases.criar_novo_usuario.implementations.exceptions.UsuarioComPropriedadesInvalidasException;

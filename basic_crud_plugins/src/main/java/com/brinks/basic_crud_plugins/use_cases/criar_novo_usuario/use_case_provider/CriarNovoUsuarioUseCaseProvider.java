@@ -1,4 +1,4 @@
-package com.basic_crud_plugins.use_cases.criar_novo_usuario.use_case_provider;
+package com.brinks.basic_crud_plugins.use_cases.criar_novo_usuario.use_case_provider;
 
 import com.brinks.use_cases.criar_novo_usuario.CriarNovoUsuario;
 import com.brinks.use_cases.criar_novo_usuario.factories.CriarNovoUsuarioUseCaseFactory;

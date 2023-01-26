@@ -1,4 +1,4 @@
-package com.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.output;
+package com.brinks.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.output;
 
 import com.brinks.entidades.Usuario;
 import lombok.AccessLevel;

@@ -1,6 +1,6 @@
-package com.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters;
+package com.brinks.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters;
 
-import com.basic_crud_plugins.data_base_configurations.repositories.UsuarioTableEntityRepository;
+import com.brinks.basic_crud_plugins.data_base_configurations.repositories.UsuarioTableEntityRepository;
 import com.brinks.use_cases.apagar_usuario_por_id.implementations.ports.VerificacaoPreExistenciaUsuarioPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;

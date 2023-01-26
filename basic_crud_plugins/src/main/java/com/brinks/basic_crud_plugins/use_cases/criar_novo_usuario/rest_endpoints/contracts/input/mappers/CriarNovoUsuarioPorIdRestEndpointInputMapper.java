@@ -1,6 +1,6 @@
-package com.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.input.mappers;
+package com.brinks.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.input.mappers;
 
-import com.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.input.CriarNovoUsuarioPorIdRestEndpointInput;
+import com.brinks.basic_crud_plugins.use_cases.criar_novo_usuario.rest_endpoints.contracts.input.CriarNovoUsuarioPorIdRestEndpointInput;
 import com.brinks.entidades.Usuario;
 import com.brinks.entidades.factories.EmailsFactory;
 import com.brinks.entidades.factories.SenhasFactory;

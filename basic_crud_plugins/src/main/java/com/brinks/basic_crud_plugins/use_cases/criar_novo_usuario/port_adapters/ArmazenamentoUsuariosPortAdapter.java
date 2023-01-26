@@ -1,11 +1,11 @@
-package com.basic_crud_plugins.use_cases.criar_novo_usuario.port_adapters;
+package com.brinks.basic_crud_plugins.use_cases.criar_novo_usuario.port_adapters;
 
-import com.basic_crud_plugins.data_base_configurations.repositories.SaltTableEntityRepository;
-import com.basic_crud_plugins.data_base_configurations.repositories.SecretTableEntityRepository;
-import com.basic_crud_plugins.data_base_configurations.repositories.UsuarioTableEntityRepository;
-import com.basic_crud_plugins.data_base_configurations.table_entities.mappers.SaltTableEntityMapper;
-import com.basic_crud_plugins.data_base_configurations.table_entities.mappers.SecretTableEntityMapper;
-import com.basic_crud_plugins.data_base_configurations.table_entities.mappers.UsuarioTableEntityMapper;
+import com.brinks.basic_crud_plugins.data_base_configurations.repositories.SaltTableEntityRepository;
+import com.brinks.basic_crud_plugins.data_base_configurations.repositories.SecretTableEntityRepository;
+import com.brinks.basic_crud_plugins.data_base_configurations.repositories.UsuarioTableEntityRepository;
+import com.brinks.basic_crud_plugins.data_base_configurations.table_entities.mappers.SaltTableEntityMapper;
+import com.brinks.basic_crud_plugins.data_base_configurations.table_entities.mappers.SecretTableEntityMapper;
+import com.brinks.basic_crud_plugins.data_base_configurations.table_entities.mappers.UsuarioTableEntityMapper;
 import com.brinks.entidades.Usuario;
 import com.brinks.use_cases.criar_novo_usuario.implementations.ports.ArmazenamentoUsuariosPort;
 import lombok.RequiredArgsConstructor;

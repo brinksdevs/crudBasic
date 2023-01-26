@@ -10,8 +10,14 @@ public abstract class Senha implements EntidadeComValidacaoDePropriedades {
 
     protected String desencriptado;
     protected String encriptado;
-    protected String dono;
-    protected byte[] sal;
+    protected Long dono;
+    protected byte[] sal = new byte[16];
+
+    public abstract void setDesencriptado(String valor);
+    public abstract void setEncriptado(String valor);
+    protected abstract String criptografar(String valor);
+    protected abstract void gerarSal();
+    protected abstract Boolean ehIgualA(String outroValorNaoCriptografado);
 
 
 }
