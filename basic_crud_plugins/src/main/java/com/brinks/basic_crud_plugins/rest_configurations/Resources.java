@@ -1,4 +1,4 @@
-package com.basic_crud_plugins.rest_configurations;
+package com.brinks.basic_crud_plugins.rest_configurations;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

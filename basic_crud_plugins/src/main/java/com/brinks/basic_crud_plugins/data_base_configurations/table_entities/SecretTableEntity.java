@@ -1,4 +1,4 @@
-package com.basic_crud_plugins.data_base_configurations.table_entities;
+package com.brinks.basic_crud_plugins.data_base_configurations.table_entities;
 
 import lombok.*;
 

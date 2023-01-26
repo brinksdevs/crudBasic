@@ -1,6 +1,6 @@
-package com.basic_crud_plugins.data_base_configurations.table_entities.mappers;
+package com.brinks.basic_crud_plugins.data_base_configurations.table_entities.mappers;
 
-import com.basic_crud_plugins.data_base_configurations.table_entities.SecretTableEntity;
+import com.brinks.basic_crud_plugins.data_base_configurations.table_entities.SecretTableEntity;
 import com.brinks.entidades.Senha;
 import com.brinks.entidades.factories.SenhasFactory;
 import org.springframework.stereotype.Component;

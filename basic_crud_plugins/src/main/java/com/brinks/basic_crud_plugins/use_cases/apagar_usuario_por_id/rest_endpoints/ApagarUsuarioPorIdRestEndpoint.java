@@ -1,6 +1,6 @@
-package com.basic_crud_plugins.use_cases.apagar_usuario_por_id.rest_endpoints;
+package com.brinks.basic_crud_plugins.use_cases.apagar_usuario_por_id.rest_endpoints;
 
-import com.basic_crud_plugins.rest_configurations.Resources;
+import com.brinks.basic_crud_plugins.rest_configurations.Resources;
 import com.brinks.use_cases.apagar_usuario_por_id.ApagarUsuarioPorId;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

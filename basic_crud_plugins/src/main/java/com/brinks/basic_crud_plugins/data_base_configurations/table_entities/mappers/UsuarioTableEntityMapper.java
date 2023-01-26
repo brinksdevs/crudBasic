@@ -1,6 +1,6 @@
-package com.basic_crud_plugins.data_base_configurations.table_entities.mappers;
+package com.brinks.basic_crud_plugins.data_base_configurations.table_entities.mappers;
 
-import com.basic_crud_plugins.data_base_configurations.table_entities.UsuarioTableEntity;
+import com.brinks.basic_crud_plugins.data_base_configurations.table_entities.UsuarioTableEntity;
 import com.brinks.entidades.Email;
 import com.brinks.entidades.Usuario;
 import com.brinks.entidades.factories.EmailsFactory;

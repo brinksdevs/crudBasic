@@ -1,7 +1,7 @@
-package com.basic_crud_plugins.use_cases.apagar_usuario_por_id.use_case_provider;
+package com.brinks.basic_crud_plugins.use_cases.apagar_usuario_por_id.use_case_provider;
 
-import com.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters.ExclusaoUsuarioPortAdapter;
-import com.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters.VerificacaoPreExistenciaUsuarioPortAdapter;
+import com.brinks.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters.ExclusaoUsuarioPortAdapter;
+import com.brinks.basic_crud_plugins.use_cases.apagar_usuario_por_id.port_adapters.VerificacaoPreExistenciaUsuarioPortAdapter;
 import com.brinks.use_cases.apagar_usuario_por_id.ApagarUsuarioPorId;
 import com.brinks.use_cases.apagar_usuario_por_id.factories.ApagarUsuarioPorIdUseCaseFactory;
 import lombok.RequiredArgsConstructor;

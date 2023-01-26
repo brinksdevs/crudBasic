@@ -1,2 +1,7 @@
-package com.brinks.use_cases.contracts;public class SupplierPort {
+package com.brinks.use_cases.contracts;
+
+public interface SupplierPort<O> {
+
+    O execute();
+
 }
