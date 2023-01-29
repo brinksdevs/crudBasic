@@ -7,5 +7,7 @@ import lombok.NoArgsConstructor;
 public class Resources {
 
     public static final String USERS = "/users";
+    public static final String USER_ID = "id";
+    public static final String USER_FINDID = "/{id}";
 
 }

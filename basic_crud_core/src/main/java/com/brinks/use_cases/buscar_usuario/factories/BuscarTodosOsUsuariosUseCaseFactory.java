@@ -6,7 +6,7 @@ import com.brinks.use_cases.buscar_usuario.implementations.ports.BuscarTodosOsUs
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
-public class BuscarTodosOsUsuariosUceCaseFactory {
+public class BuscarTodosOsUsuariosUseCaseFactory {
 
     private final BuscarTodosOsUsuariosPort buscarTodosOsUsuariosPort;
 

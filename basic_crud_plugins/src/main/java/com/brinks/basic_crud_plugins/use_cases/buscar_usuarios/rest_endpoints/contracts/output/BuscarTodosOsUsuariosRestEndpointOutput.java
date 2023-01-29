@@ -12,6 +12,4 @@ import java.util.List;
 @Setter
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class BuscarTodosOsUsuariosRestEndpointOutput {
-
-
 }

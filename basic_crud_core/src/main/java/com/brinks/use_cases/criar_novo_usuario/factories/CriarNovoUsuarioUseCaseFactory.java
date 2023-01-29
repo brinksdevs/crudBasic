@@ -13,5 +13,4 @@ public class CriarNovoUsuarioUseCaseFactory {
     public CriarNovoUsuario makeInstance(){
         return new CriarNovoUsuarioImplementation(this.armazenamentoUsuariosPort);
     }
-
 }
