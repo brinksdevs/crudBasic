@@ -21,7 +21,7 @@ public class CriarNovoUsuarioPorIdRestEndpoint {
     private final CriarNovoUsuarioPorIdRestEndpointInputMapper criarNovoUsuarioPorIdRestEndpointInputMapper;
 
     @PostMapping
-    public ResponseEntity<CriarNovoUsuarioPorIdRestEndpointOutput> apagarUsuarioPorId(@RequestBody CriarNovoUsuarioPorIdRestEndpointInput input){
+    public ResponseEntity<CriarNovoUsuarioPorIdRestEndpointOutput> criarNovoUsuario(@RequestBody CriarNovoUsuarioPorIdRestEndpointInput input){
         var usuarioRecemCriado = this.criarNovoUsuario.execute(this.criarNovoUsuarioPorIdRestEndpointInputMapper.map(input));
         return ResponseEntity
                 .status(201)

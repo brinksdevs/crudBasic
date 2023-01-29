@@ -12,7 +12,7 @@ public class UsuarioTableEntityMapper {
 
     public Usuario mapToBusinessEntity(UsuarioTableEntity usuarioTableEntity){
         var usuario = new UsuariosFactory().makeInstance();
-        usuario.setNome(usuario.getNome());
+        usuario.setNome(usuarioTableEntity.getName());
         usuario.setEmail(this.mapEmailFrom(usuarioTableEntity));
         usuario.setId(usuarioTableEntity.getId());
         return usuario;
@@ -23,6 +23,7 @@ public class UsuarioTableEntityMapper {
         email.setEndereco(usuarioTableEntity.getEmail());
         return email;
     }
+
 
     public UsuarioTableEntity mapToTableEntity(Usuario usuario){
         return UsuarioTableEntity.builder()
