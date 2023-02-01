@@ -16,7 +16,7 @@ public class ApagarUsuarioPorIdRestEndpoint {
 
     private final ApagarUsuarioPorId apagarUsuarioPorId;
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping(Resources.USER_FINDID)
     public ResponseEntity<Void> apagarUsuarioPorId(@PathVariable Long id){
         this.apagarUsuarioPorId.execute(id);
         return ResponseEntity.noContent().build();
